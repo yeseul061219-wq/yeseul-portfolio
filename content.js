@@ -266,7 +266,6 @@ I also want to continue improving my anatomy and illustration skills while explo
          text:'Illustrations and character development for Back to 2000!',
          media:[
            {type:'image',src:'media/illustration-character-sheets.png',caption:'Character design sheets.'},
-           {type:'image',src:'media/back-to-2000-art.png',caption:'Back to 2000! — illustrated artwork.'},
            {type:'image',src:'media/back-to-2000-additional-illustrations.png',caption:'Back to 2000! — additional character illustrations and posters.'}
          ]}
       ]
