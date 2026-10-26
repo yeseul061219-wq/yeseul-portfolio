@@ -1,0 +1,1 @@
+MAC project updated: burgundy solid rotating book cover (#691b2b), media/mac-red-illustration.png as project hero image, media/mac-221.mp4 as project video. Unzip and open index.html. Book carousel and other projects unchanged.
