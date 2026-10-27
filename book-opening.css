@@ -1,0 +1,77 @@
+/* FULL-SCREEN book-opening stage, isolated from the rotating carousel. */
+.bo-overlay{
+  position:fixed;inset:0;z-index:99999;pointer-events:none;
+  perspective:1900px;background:rgba(245,242,235,0);
+  transition:background .48s ease,opacity .34s ease
+}
+.bo-shell{
+  position:absolute;transform-style:preserve-3d;transform-origin:center center;
+  transform:translate3d(0,0,0) scale(1);
+  transition:transform .55s cubic-bezier(.22,.8,.16,1);
+  filter:drop-shadow(16px 20px 20px rgba(34,26,25,.24))
+}
+.bo-pages{
+  position:absolute;inset:0;background:#f6efe4;
+  border:1px solid #cfc5b5;border-radius:1px 5px 5px 1px;
+  box-shadow:inset -13px 0 12px #e9dfcf,inset 0 -5px 0 #dcd1bd;
+  overflow:hidden
+}
+.bo-page-content{
+  position:absolute;inset:0;display:flex;flex-direction:column;
+  padding:13% 11% 10% 15%;color:#544a42;
+  font-family:Georgia,serif
+}
+.bo-page-overline{
+  font-family:Arial,sans-serif;font-size:clamp(5px,.75vw,9px);
+  letter-spacing:.19em;font-weight:700;opacity:.7
+}
+.bo-page-title{
+  font-size:clamp(13px,2.4vw,28px);line-height:1.04;margin:auto 0 .5em;
+  overflow-wrap:anywhere
+}
+.bo-page-subtitle{font-size:clamp(7px,1.1vw,12px);font-style:italic;line-height:1.4}
+.bo-page-footer{
+  font-family:Arial,sans-serif;font-size:clamp(5px,.65vw,8px);
+  letter-spacing:.17em;margin-top:auto;border-top:1px solid #cfc5b5;padding-top:10px
+}
+.bo-front{
+  position:absolute;inset:0;transform-origin:left center;
+  transform-style:preserve-3d;backface-visibility:visible;
+  transition:transform .58s cubic-bezier(.2,.72,.16,1) .42s;
+  box-shadow:8px 8px 14px rgba(25,19,19,.21);
+  background:var(--bo-color);border-radius:2px 5px 5px 2px
+}
+.bo-front>.book-cover{
+  display:flex!important;position:absolute!important;inset:0!important;
+  width:100%!important;height:100%!important;transform:none!important;
+  backface-visibility:hidden!important;
+  color:var(--bo-ink)
+}
+.bo-front::after{
+  content:"";position:absolute;inset:0;transform:rotateY(180deg);
+  backface-visibility:hidden;background:#eee2d2;
+  border:1px solid #d2c7b7;box-shadow:inset -11px 0 16px rgba(85,70,55,.12);
+  border-radius:4px 1px 1px 4px
+}
+.bo-spine{
+  position:absolute;top:0;left:0;width:4%;height:100%;
+  background:rgba(30,20,20,.25);z-index:2;pointer-events:none
+}
+.bo-playing{background:rgba(245,242,235,.97)}
+.bo-playing .bo-shell{
+  transform:translate3d(calc(var(--bo-x) + var(--bo-spread-offset)),var(--bo-y),0) scale(var(--bo-scale))
+}
+.bo-playing .bo-front{transform:rotateY(-178deg)}
+.bo-finishing{opacity:0}
+html.bo-in-progress{scroll-behavior:auto}
+@media(max-width:650px){
+  .bo-page-title{font-size:clamp(10px,3.1vw,19px)}
+  .bo-page-overline,.bo-page-footer{letter-spacing:.08em}
+}
+@media(prefers-reduced-motion:reduce){
+  .bo-overlay,.bo-shell,.bo-front{transition:none!important}
+}
+
+/* Clean blank paper, no inner book text. */
+.bo-pages{background:#f8f3eb}
+.bo-page-content{display:none!important}
