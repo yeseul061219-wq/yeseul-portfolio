@@ -166,21 +166,27 @@ This process helped me understand how character design and storytelling can exte
             {type:'image',src:'media/case-merch-keychains.png',caption:'Original SD illustrations and AI-assisted acrylic keychain mockups.'},
             {type:'image',src:'media/case-merch-stickers.png',caption:'AI-assisted merchandise mockups — acrylic keychains and sticker applications.'}
           ]
-        },
-        {
-          eyebrow:'10 / PORTFOLIO DEVELOPMENT',
-          heading:'Portfolio Development & Presentation',
-          text:`As storytelling is an important part of my creative identity, I wanted my portfolio to feel more like an interactive storybook than a traditional website.
+        },   
+{
+  eyebrow:'10 / PORTFOLIO DEVELOPMENT',
+  heading:'Portfolio Development & Presentation',
+  text:`As storytelling is an important part of my creative identity, I wanted my portfolio to feel more like an interactive storybook than a traditional website.
 
-I decided to incorporate a page-turning interaction, allowing visitors to explore my creative process as if they were reading a book.
+I incorporated a page-turning interaction, allowing visitors to explore my creative process as if they were reading a book.
 
-To develop this experience, I used ChatGPT to assist with coding and iteratively edited and refined the website in Visual Studio Code.
+To develop the website, I used ChatGPT for coding assistance and GitHub to manage and publish my work. I also directly edited and refined the JavaScript code in content.js, making adjustments to the website's content, layout, and overall presentation.
 
-Through this process, I explored how interaction design and storytelling could work together to create a more personal and engaging portfolio experience.
+Through this iterative process, I explored how coding, interaction design, and visual storytelling could work together to create a more personal and engaging portfolio experience.
 
 Rather than simply displaying my final illustrations, I wanted the website itself to reflect my identity as a designer who enjoys bringing stories to life.`,
-          media:[]
-        },
+  media:[
+    {
+      type:'image',
+      src:'media/case-portfolio-github-process.png',
+      caption:'Portfolio development process — directly editing content.js and managing the live website through GitHub.'
+    }
+  ]
+},
         {
           eyebrow:'11 / REFLECTION & FUTURE DEVELOPMENT',
           heading:'Reflection & Future Development',
