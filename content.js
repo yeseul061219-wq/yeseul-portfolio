@@ -186,35 +186,45 @@ Rather than simply displaying my final illustrations, I wanted the website itsel
       caption:'Portfolio development process — directly editing content.js and managing the live website through GitHub.'
     }
   ]
+},        
+{
+  eyebrow:'11 / PEER FEEDBACK & REFINEMENT',
+  heading:'Refining the Storybook Experience',
+  text:`I shared my portfolio website with a peer to understand whether its design communicated the creative identity I intended to present.
+
+After exploring the website, my peer described me as a designer who creates stories. This was encouraging because it reflected exactly how I wanted to be perceived: someone who brings together illustration, character design, and visual storytelling.
+
+However, my peer also suggested that the storybook concept could be pushed further. Although the website already used a book-inspired layout, they felt that allowing the cover to physically open would make the experience more immersive. They also recommended incorporating my original characters into the cover to create a stronger connection with my illustration practice.
+
+In response, I developed a book-opening interaction, transforming the first impression from a static introduction into the beginning of a story.
+
+This refinement made me realise that a portfolio's interaction can communicate just as much about a designer as the work displayed within it. The feedback confirmed that my storytelling identity was coming through, while also showing me how the experience could become more distinctive.
+
+In future iterations, I would like to further personalise the cover using my original character illustrations.`,
+  media:[
+    {
+      type:'image',
+      src:'media/case-storybook-before-after.png',
+      caption:'Before and After — refining the interactive storybook portfolio through peer feedback.'
+    }
+  ]
 },
-        {
-          eyebrow:'11 / REFLECTION & FUTURE DEVELOPMENT',
-          heading:'Reflection & Future Development',
-          text:`Throughout this three-week self-directed practice, I learned that developing my personal illustration style involves more than simply improving my drawing skills.
-
-Initially, I planned to focus on 2D animation and motion graphics. However, reflecting on my previous work helped me realise that what I enjoy most is creating original characters, developing their stories, and building fictional worlds. This experience gave me a clearer understanding of the creative direction I want to pursue.
-
-By reviewing my previous illustrations, I identified areas for improvement, particularly anatomy, proportions, and lighting. I practised gesture drawing and anatomical construction before applying these skills to my cheonyeo gwishin character. Exploring different perspectives and lighting directions taught me the importance of understanding form rather than relying solely on intuition.
-
-Developing The Red Thread, inspired by Korean folklore, also allowed me to connect my cultural background with my passion for storytelling. Through SD character illustrations and AI-assisted merchandise mockups, I explored how original characters could develop into a recognisable creative IP.
-
-Creating my portfolio website was another valuable challenge. As storytelling is central to my creative identity, I designed a page-turning interaction and developed it by refining code with ChatGPT and Visual Studio Code. This helped me understand that the way I present my work can be just as meaningful as the work itself.
-
-Although I still need to improve my technical skills and character consistency, this project helped me discover my strengths, recognise my limitations, and identify a clearer direction for my future practice.
-
-Most importantly, I learned that developing my personal style is not about changing what makes my illustrations unique, but understanding and refining those qualities with greater intention.`,
-          media:[]
-        },
         {
           eyebrow:'12 / CHALLENGES & NEXT STEPS',
           heading:'Challenges & Future Development',
-          text:`One of my biggest challenges during this project was time management. I spent considerable time developing the cheonyeo gwishin, including her character sheet, perspective studies, and lighting experiments. As a result, I was unable to develop the dokkaebi to the same level of detail or complete his full character sheet.
+          text:`At the beginning of this project, I believed improving my illustration practice meant becoming technically better at drawing. However, reflecting on my previous work helped me realise that my greatest interest lies in creating original characters, developing stories, and building fictional worlds.
 
-This experience taught me the importance of balancing detailed creative exploration with realistic project planning and time management.
+Through anatomy and gesture studies, I recognised how often I relied on intuition rather than understanding underlying structures. Applying these techniques to my character designs helped me approach proportions, perspectives, and lighting more intentionally, although maintaining consistency remains a challenge.
 
-Moving forward, I hope to complete the dokkaebi's character sheet, further develop the relationship between the two characters, and expand The Red Thread into a more cohesive character-based IP.
+Developing The Red Thread allowed me to connect my Korean cultural background with my passion for storytelling. Creating the cheonyeo gwishin and dokkaebi, alongside SD illustrations and AI-assisted merchandise mockups, also helped me explore how original characters could develop into a recognisable creative IP.
 
-I also want to continue improving my anatomy and illustration skills while exploring future possibilities in webtoon storytelling, animation, and character merchandise.`,
+Time management was one of my biggest challenges. I spent considerable time refining the cheonyeo gwishin, leaving less time to develop the dokkaebi in the same level of detail. This taught me the importance of balancing creative experimentation with realistic planning.
+
+Creating my portfolio website was another learning experience. With ChatGPT-assisted coding and GitHub, I developed an interactive storybook concept. Peer feedback encouraged me to refine the book-opening interaction, helping the website communicate my identity as a storytelling-focused designer.
+
+Moving forward, I want to strengthen my anatomy and illustration skills, further develop both characters, and explore The Red Thread through webtoon storytelling, animation, and merchandise.
+
+Ultimately, this project helped me understand that refining my personal style is not about changing it, but recognising what makes it unique and developing those qualities with greater intention.`,
           media:[]
         },
         {
